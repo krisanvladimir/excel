@@ -17,10 +17,10 @@ export class Excel { // экспортирует новый коснтуркто
       const $el = $.create('div', Component.className) // изпользую свой фреймворк из DOM
 
       const component = new Component($el) // в нем создана переменная которая создает новый Компонент(переменной $el)
-      // DEBUG
-      if (component.name) {
-        window['c' + component.name] = component
-      }
+      // // DEBUG
+      // if (component.name) {
+      //   window['c' + component.name] = component
+      // }
       $el.html(component.toHTML()) // добавляем привязанность компонента к HTML
        // $root.insertAdjacentHTML('beforeend', component.toHTML()) элемент $root, который добавляет div, добавляет его в HTML через toHTML()
       $root.append($el)
